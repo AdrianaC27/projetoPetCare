@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +11,25 @@
     <script src="https://kit.fontawesome.com/f0babb4814.js" crossorigin="anonymous"></script>
     <title>PetCare</title>
 </head>
+
 <body>
     <header>
-        
-         <nav class="navbar navbar-expand-lg navbar-light  col-10 ">
-            <figure class="col-2" >
+
+        <nav class="navbar navbar-expand-lg navbar-light  col-10 ">
+            <figure class="col-2">
                 <img src="imagens/logoPet_Shop.png" alt="logo" class="col-10">
             </figure>
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbar-toggler demo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>>
             </button>
-            <div class="collapse navbar-collapse col-10 bg-roxo"  id="navbarTogglerDemo02">
+            <div class="collapse navbar-collapse col-10 bg-roxo" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quem somos</a>
+                        <a class="nav-link" href="sobre_nos.html">Quem somos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nossos Produtos</a>
@@ -43,53 +45,82 @@
         <h1>Pet Care</h1>
 
         <figure>
-            <img src="imagens/BANHO.jfif" alt="imagem banho" class="col-8">
+            <img src="imagens/BANHO.jfif" alt="imagem banho" class="col-12">
         </figure>
-<h2> Banho e Tosa</h2>
-<table>
-    <tr>
-        <td>Gatos</td>                   
-        <td>R$ 50,00</td>
-    </tr>
-    <tr>
-        <td>Cachorro Pequeno</td>                   
-        <td>R$ 50,00</td>
-    </tr>
-       <tr>
-        <td>Cachorro Médio</td>                   
-        <td>R$ 70,00</td>
-    
-       </tr>
-       <tr>
-        <td>Cachorro grande</td>                   
-        <td>R$ 100,00</td>
-    
-       </tr>
-    
         
-    
-    
+        <div class="Table">
+        <table>
+            <tr>BANHO E TOSA</tr>
+            <tr>
+                <td>Gatos</td>
+                <td>R$ 50,00</td>
+            </tr>
+            <tr>
+                <td>Cachorro Pequeno</td>
+                <td>R$ 50,00</td>
+            </tr>
+            <tr>
+                <td>Cachorro Médio</td>
+                <td>R$ 70,00</td>
 
-</table>
+            </tr>
+            <tr>
+                <td>Cachorro grande</td>
+                <td>R$ 100,00</td>
+
+            </tr>
+
+        </table>
+    </div>
 
         <main class="container">
-            
+            <!--Carousel-->
 
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            
+            <div id="mostrar-itens" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-50" src="imagens/Coleira-Caes-Nylon-Doco-Cinza.png" alt="First slide">
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-50" src="imagens/Cama-Retangular-Azul-Fabrica-Pet.jpg" alt="Second slide">
+                <div class="carousel-item active">
+                    <img src="imagens/Cama-Retangular-Azul-Fabrica-Pet.jpg" alt="cama" class="d-block w-50">
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-50" src="imagens/racao-golden-special-para-caes-.jpg" alt="Third slide">
+
+                <div class="carousel-item ">
+                    <img src="imagens/Coleira-Caes-Nylon-Doco-Cinza.png" alt="coleira" class="d-block w-50">
                 </div>
-              </div>
+
+                <div class="carousel-item ">
+                    <img src="imagens/Gatos-Adultos-Frango-e-Carne-Frente.jpg" alt="raçãogatos" class="d-block w-50">
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="imagens/racao-golden-special-para-caes-.jpg" alt="ração caes" class="d-block w-50">
+                </div>
+
+
             </div>
-            
-            
-    
+            <div class="button">
+                <button class="carousel-control-prev" type="button" data-target="#mostrar-itens" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">prev </span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-target="#mostrar-itens" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next </span>
+
+                </button>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
 </body>
+
+
+</body>
+
 </html>

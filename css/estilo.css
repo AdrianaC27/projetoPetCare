@@ -8,6 +8,7 @@
 }
 body{
     background-color: aqua;
+    
 }
 .bg-tra{
     background-color: #ff7f5080;
@@ -16,3 +17,9 @@ body{
     background-color: #2D3FE4;
 
 }  
+
+.table, th, td {
+    border: 1px solid;
+    background-color: #2D3FE4;
+  }
+ 
